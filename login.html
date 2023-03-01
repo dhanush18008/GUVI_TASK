@@ -3,11 +3,12 @@
 <head>
 	<title>Login Page</title>
 	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	
 </head>
 <body>
 	<div class="login-box">
 		<h2>Login Here</h2>
-		<form>
+		<form action="./profile.html">
 			<div class="user-box">
 				<input type="text" name="username" required="">
 				<label>Username</label>
@@ -16,9 +17,11 @@
 				<input type="password" name="password" required="">
 				<label>Password</label>
 			</div>
-			<input type="submit" name="" value="Submit">
+			<input onclick="gotoprofile()" type="submit" name="" value="Submit">
+			
 		</form>
 	</div>
 	<div style="text-align: center; margin-top: 50px;"><a  href="./register.html">Register</a></div>
+	<script src="./js/login.js"></script>
 </body>
 </html>
